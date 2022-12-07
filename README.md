@@ -23,3 +23,10 @@ Configuring the Git cli to push the code to repository.
 
           git config --global user.email "emohammedimtiazqa@gmail.com # Have to give same email id as github account
 
+Basic Git Cli commands
+          
+          git init                     #for initializing the git
+          git add .                    # To add the all modified file to local directory
+          git status                   # To check the status of the file add status
+          git commit -m "msg"          # Commit the changes with msg
+          git push origin main         # Pushing the code to repository from origin to main/branch
