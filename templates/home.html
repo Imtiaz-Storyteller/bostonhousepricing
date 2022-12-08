@@ -1,5 +1,37 @@
-<h1>
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Machine Learning API</title>
+    </head>
+    <body style="background-color:powderblue;">
+        <div class="login">
+            <hl style="color:rgb(255, 42, 0);"><b>Boston House Price Prediction</b></hl>
+            <br>
+            <!-- Main input for Receiving Query to our ML-->
+            <form action="{{url_for('predict')}}"method="post">
+                <input type="text" name="CRIM" placeholder="CRIM" required="required"/><br>
+                <input type="text" name="ZN" placeholder="ZN" required="required"/><br>
+                <input type="text" name="INDUS" placeholder="INDUS" required="required"/><br>
+                <input type="text" name="CHAS" placeholder="CHAS" required="required"/><br>
+                <input type="text" name="NOX" placeholder="NOX" required="required"/><br>
+                <input type="text" name="RM" placeholder="RM" required="required"/><br>
+                <input type="text" name="Age" placeholder="Age" required="required"/><br>
+                <input type="text" name="DIS" placeholder="DIS" required="required"/><br>
+                <input type="text" name="RAD" placeholder="RAD" required="required"/><br>
+                <input type="text" name="TAX" placeholder="TAX" required="required"/><br>
+                <input type="text" name="PTRATIO" placeholder="PTRATIO" required="required"/><br>
+                <input type="text" name="B" placeholder="B" required="required"/><br>
+                <input type="text" name="LSTAT" placeholder="LSTAT" required="required"/><br>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                
+            </form>
+            <br>
+            <br>  
 
 
-</h1>
+        </div>
+        {{prediction_text}}
+    </body>
+</html>
