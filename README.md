@@ -30,3 +30,7 @@ Basic Git Cli commands
           git status                   # To check the status of the file add status
           git commit -m "msg"          # Commit the changes with msg
           git push origin main         # Pushing the code to repository from origin to main/branch
+
+Usefull links:
+https://code.visualstudio.com/docs/python/python-tutorial      # Get help related to  Module not found error
+https://code.visualstudio.com/docs/python/tutorial-flask       # Flask installation related 
